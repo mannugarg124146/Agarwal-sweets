@@ -1,0 +1,219 @@
+/* Making margin and padding 0 for all */
+/* *{
+    margin: 0px;
+    height: 0px;
+} */
+/* CSS variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation bar and logo */
+#logo {
+    margin: 20px 20px;
+    padding: 20px 20px;
+    height: 50px;
+
+}
+
+#logo img {
+    margin: -28px -9px;
+    height: 89px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li{
+    list-style:none ;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px 26px;
+    text-decoration: none;
+    color: brown;
+    border-radius: 30px;
+
+}
+#navbar ul li a:hover{
+   color: blue;
+   background-color: blanchedalmond;
+
+}
+#navbar::before{
+    content: " ";
+    background-color:white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    padding: 20px;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 155px 50px;
+    height: 400px;
+   
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url('../img/burger.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 630px;
+    z-index: -1;
+    opacity: 0.6;
+    padding: 60px;
+  
+}
+#home h1{
+text-align: center;
+font-family: 'Baloo Bhai 2', cursive;
+}
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* services */
+#services{
+    margin: 25px;
+    display: flex;
+    /* flex-flow: row wrap; */
+   /* flex-direction: column; */
+}
+#services .box{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: rgb(237, 221, 221);
+    align-items: center;
+   
+
+}
+#services .box img{
+    height: 210px;
+    margin: auto;
+    display: block;
+    padding: 20px 20px;
+
+}
+/* clients section */
+#clients-section{
+    height: 400px;
+
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/back.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: .4;
+
+}
+#clients{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    /* border: 2px solid red; */
+   height: 150px;
+}
+.client-item{
+    padding: 34px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/form-img.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: .5;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .75rem;
+}
+#contact-box{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* padding bottom:34px ; */
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+#contact-box input{
+    border-radius: 1em;
+    border: black;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+/* utility classes */
+.h-primary{
+font-size: 2.5rem;
+padding: 5px;
+color:black;
+text-align: center;
+
+}
+.h-secondary-center{
+    font-size: 1.5rem;
+    padding: 5px;
+    color:black;
+    text-align: center;
+
+    
+    }
+.btn{
+    padding: 7px 10px;
+    border: solid 2px red;
+    background-color: bisque;
+    color: black;
+    margin: 12px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
